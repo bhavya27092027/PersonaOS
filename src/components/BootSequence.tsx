@@ -15,7 +15,7 @@ export function BootSequence() {
   const { bootComplete, setBootComplete } = useAppStore();
 
   useEffect(() => {
-    const timers: NodeJS.Timeout[] = [];
+    const timers: ReturnType<typeof setTimeout>[] = [];
 
     bootLines.forEach((_, index) => {
       const timer = setTimeout(() => {
