@@ -18,9 +18,17 @@ import { AICompanion } from './components/sections/AICompanion';
 import { SkillChallenges } from './components/sections/SkillChallenges';
 import { ExperienceTimeline } from './components/sections/ExperienceTimeline';
 import { ContactTerminal } from './components/sections/ContactTerminal';
+import { TechQuizPage } from './components/quiz/TechQuizPage';
+import { DebugChallengePage } from './components/quiz/DebugChallengePage';
+import { CodeRushPage } from './components/quiz/CodeRushPage';
 
 function App() {
-  const { bootComplete, setVisitorModalOpen } = useAppStore();
+  const {
+    bootComplete,
+    setVisitorModalOpen,
+    currentGame,
+    setCurrentGame
+  } = useAppStore();
 
   useEffect(() => {
     if (bootComplete) {
@@ -57,7 +65,19 @@ function App() {
           <ProjectUniverse />
           <AchievementVault />
           <AICompanion />
-          <SkillChallenges />
+          {!currentGame && <SkillChallenges />}
+
+          {currentGame === "tech-quiz" && (
+            <TechQuizPage onExit={() => setCurrentGame(null)} />
+          )}
+
+          {currentGame === "debug-code" && (
+            <DebugChallengePage onExit={() => setCurrentGame(null)} />
+          )}
+
+          {currentGame === "code-rush" && (
+            <CodeRushPage onExit={() => setCurrentGame(null)} />
+          )}
           <ExperienceTimeline />
           <ContactTerminal />
 

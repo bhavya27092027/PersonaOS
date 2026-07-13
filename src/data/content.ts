@@ -1,361 +1,1020 @@
 import type { Project } from '../store/useAppStore';
 
 export const personalInfo = {
-name: 'Bhavya Jain',
-title: 'Software Engineer & AI/ML Enthusiast',
-subtitle: 'AI/ML Enthusiast | Full Stack Developer | Problem Solver',
-tagline: 'Transforming ideas into intelligent digital experiences.',
-email: 'bhavya011048@gmail.com',
-linkedin: 'https://www.linkedin.com/in/bhavyajain-fullstack/',
-github: 'https://github.com/bhavya27092027',
-resume: '/resume.pdf',
-location: 'Ghaziabad, India',
-bio: 'B.Tech Computer Science (AI & ML) student at ABES Engineering College with a strong interest in Software Development, Artificial Intelligence, and Data Structures & Algorithms. Passionate about building impactful applications using React, Node.js, MongoDB, Machine Learning, and Generative AI while continuously exploring new technologies and solving real-world problems.',
+  name: "Bhavya Jain",
+
+  title: "Software Engineer | AI Engineer | Full-Stack Developer",
+
+  subtitle:
+    "Building AI Products • Generative AI • MERN Stack • Machine Learning • Problem Solver",
+
+  tagline:
+    "Turning intelligent ideas into production-ready AI applications.",
+
+  email: "bhavya011048@gmail.com",
+
+  linkedin: "https://www.linkedin.com/in/bhavyajain-fullstack/",
+
+  github: "https://github.com/bhavya27092027",
+
+  resume: "/Bhavya_Jain_Resume.pdf",
+
+  location: "Ghaziabad, India",
+
+  bio: `
+I am a final-year B.Tech Computer Science (AI & ML) student at ABES Engineering College passionate about Software Engineering, Artificial Intelligence, and Full-Stack Development.
+
+My work focuses on building AI-powered products using React, Node.js, MongoDB, TensorFlow, and Large Language Models (LLMs). I enjoy solving real-world problems through scalable software solutions while continuously exploring modern AI technologies.
+
+My journey includes publishing IEEE research, completing industry internships, building AI-powered applications, and strengthening problem-solving skills through competitive programming.
+
+I aspire to become a Software Engineer building intelligent systems that combine scalable backend engineering with cutting-edge Artificial Intelligence.
+`,
 };
 
 
 export const skills = [
-{ name: 'Java', level: 88, color: '#f89820', category: 'Languages' },
-{ name: 'Python', level: 85, color: '#3776AB', category: 'Languages' },
-{ name: 'JavaScript', level: 84, color: '#F7DF1E', category: 'Languages' },
 
-{ name: 'React', level: 82, color: '#61DAFB', category: 'Frontend' },
-{ name: 'HTML', level: 90, color: '#E34F26', category: 'Frontend' },
-{ name: 'CSS', level: 85, color: '#1572B6', category: 'Frontend' },
+  // Languages
 
-{ name: 'Node.js', level: 78, color: '#339933', category: 'Backend' },
-{ name: 'Express.js', level: 76, color: '#000000', category: 'Backend' },
+  { name: "C++", level: 90, color: "#00599C", category: "Languages" },
 
-{ name: 'MongoDB', level: 75, color: '#47A248', category: 'Database' },
-{ name: 'MySQL', level: 78, color: '#4479A1', category: 'Database' },
+  { name: "Java", level: 88, color: "#f89820", category: "Languages" },
 
-{ name: 'Machine Learning', level: 72, color: '#FF6F00', category: 'AI/ML' },
-{ name: 'TensorFlow', level: 70, color: '#FF6F00', category: 'AI/ML' },
+  { name: "Python", level: 90, color: "#3776AB", category: "Languages" },
 
-{ name: 'Data Structures & Algorithms', level: 85, color: '#8B5CF6', category: 'Problem Solving' },
-{ name: 'Git & GitHub', level: 80, color: '#F05032', category: 'Tools' },
+  { name: "JavaScript", level: 88, color: "#F7DF1E", category: "Languages" },
+
+  { name: "TypeScript", level: 82, color: "#3178C6", category: "Languages" },
+
+
+
+  // Frontend
+
+  { name: "React.js", level: 90, color: "#61DAFB", category: "Frontend" },
+
+  { name: "HTML5", level: 95, color: "#E34F26", category: "Frontend" },
+
+  { name: "CSS3", level: 90, color: "#1572B6", category: "Frontend" },
+
+  { name: "Tailwind CSS", level: 88, color: "#06B6D4", category: "Frontend" },
+
+  { name: "Vite", level: 85, color: "#646CFF", category: "Frontend" },
+
+
+
+  // Backend
+
+  { name: "Node.js", level: 87, color: "#339933", category: "Backend" },
+
+  { name: "Express.js", level: 85, color: "#000000", category: "Backend" },
+
+  { name: "REST APIs", level: 88, color: "#4F46E5", category: "Backend" },
+
+  { name: "JWT Authentication", level: 85, color: "#7C3AED", category: "Backend" },
+
+
+
+  // Database
+
+  { name: "MongoDB", level: 86, color: "#47A248", category: "Database" },
+
+  { name: "MySQL", level: 84, color: "#4479A1", category: "Database" },
+
+  { name: "PostgreSQL", level: 78, color: "#336791", category: "Database" },
+
+
+
+  // AI
+
+  { name: "Machine Learning", level: 86, color: "#FF9800", category: "AI / ML" },
+
+  { name: "Deep Learning", level: 82, color: "#E65100", category: "AI / ML" },
+
+  { name: "TensorFlow", level: 82, color: "#FF6F00", category: "AI / ML" },
+
+  { name: "Keras", level: 82, color: "#D00000", category: "AI / ML" },
+
+  { name: "OpenCV", level: 75, color: "#5C3EE8", category: "AI / ML" },
+
+  { name: "Scikit-Learn", level: 80, color: "#F7931E", category: "AI / ML" },
+
+  { name: "Generative AI", level: 82, color: "#9333EA", category: "AI / ML" },
+
+  { name: "Prompt Engineering", level: 85, color: "#0EA5E9", category: "AI / ML" },
+
+  { name: "Gemini API", level: 86, color: "#14B8A6", category: "AI / ML" },
+
+
+
+  // Tools
+
+  { name: "Git", level: 90, color: "#F05032", category: "Tools" },
+
+  { name: "GitHub", level: 90, color: "#181717", category: "Tools" },
+
+  { name: "Postman", level: 85, color: "#FF6C37", category: "Tools" },
+
+  { name: "Thunder Client", level: 85, color: "#6C63FF", category: "Tools" },
+
+  { name: "VS Code", level: 95, color: "#007ACC", category: "Tools" },
+
+
+
+  // Problem Solving
+
+  { name: "Data Structures", level: 90, color: "#7C3AED", category: "Problem Solving" },
+
+  { name: "Algorithms", level: 88, color: "#EC4899", category: "Problem Solving" },
+
+  { name: "Competitive Programming", level: 85, color: "#22C55E", category: "Problem Solving" }
+
 ];
 
 
 export const projects: Project[] = [
-{
-id: 'interview-prep-bot',
-name: 'AI Interview Preparation Bot',
-description: 'AI-powered platform for technical and HR interview preparation',
-longDescription: 'An intelligent interview preparation platform that helps students practice technical and HR interviews through AI-generated questions, mock interview sessions, and personalized feedback. The system simulates real interview scenarios and helps users improve communication and problem-solving skills.',
-technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Gemini API'],
-features: [
-'AI-generated interview questions',
-'Mock interview simulation',
-'Technical and HR interview preparation',
-'Personalized feedback and suggestions',
-],
-challenges: [
-'Generating relevant interview questions dynamically',
-'Maintaining conversational context',
-'Providing meaningful AI-driven feedback',
-],
-results: [
-'Improved interview readiness for students',
-'Real-time AI interaction experience',
-'Full-stack implementation with AI integration',
-],
-github: 'https://github.com/bhavya27092027/InterviewPreparationBot',
-color: '#FF6F00',
-},
+  {
+    id: "persona-os",
 
-{
-id: 'digit-recognition',
-name: 'Handwritten Digit Recognition',
-description: 'Deep learning model for handwritten digit classification',
-longDescription: 'A machine learning application that recognizes handwritten digits using neural networks. The project includes image preprocessing, model training, evaluation, and prediction modules to accurately classify handwritten numerical inputs.',
-technologies: ['Python', 'TensorFlow', 'Keras', 'NumPy', 'OpenCV'],
-features: [
-'Handwritten digit classification',
-'Image preprocessing pipeline',
-'Neural network training and evaluation',
-'Prediction visualization',
-],
-challenges: [
-'Improving model accuracy',
-'Handling noisy image inputs',
-'Optimizing training performance',
-],
-results: [
-'High classification accuracy on test data',
-'Successful real-time predictions',
-'Practical implementation of deep learning concepts',
-],
-github: 'https://github.com/bhavya27092027/ML-Project',
-color: '#4169E1',
-},
+    name: "PersonaOS",
 
-{
-id: 'cab-booking-portal',
-name: 'Cab Booking Portal',
-description: 'Online cab reservation and management system',
-longDescription: 'A web-based cab booking application that enables users to book rides, manage reservations, and track booking details. The system includes user authentication, booking workflows, and database-driven management features.',
-technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-features: [
-'Cab booking and reservation system',
-'User authentication',
-'Booking management dashboard',
-'Database-driven ride records',
-],
-challenges: [
-'Designing efficient booking workflows',
-'Managing relational database operations',
-'Building responsive user interfaces',
-],
-results: [
-'Successful implementation of booking system',
-'Efficient ride management workflow',
-'Practical database integration experience',
-],
-github: 'https://github.com/bhavya27092027/WebDev-CapstoneProject',
-color: '#10b981',
-},
+    description:
+      "An AI-powered interactive portfolio that transforms a traditional resume into a conversational recruiter experience.",
 
-{
-id: 'mini-project-suite',
-name: 'Interactive Web Projects Suite',
-description: 'Collection of interactive web applications and games',
-longDescription: 'A collection of frontend and logic-based projects including Tic Tac Toe, KBC Quiz Application, and other interactive web applications. These projects demonstrate problem-solving skills, UI design, and JavaScript development concepts.',
-technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
-features: [
-'Tic Tac Toe Game',
-'KBC Quiz Application',
-'Interactive UI Components',
-'Logic-based Problem Solving',
-],
-challenges: [
-'Implementing game logic efficiently',
-'Managing application state',
-'Creating engaging user experiences',
-],
-results: [
-'Strengthened frontend development skills',
-'Improved JavaScript problem-solving abilities',
-'Built multiple interactive applications',
-],
-github: 'https://github.com/bhavya27092027/Web-Development-Minor-Projects',
-live: 'https://github.com/bhavya27092027/Web-Dev-Projects',
-color: '#7c3aed',
-},
+    longDescription:
+      `PersonaOS is an intelligent portfolio platform designed to replace static resumes with an AI-powered conversational interface. Instead of simply viewing projects and achievements, recruiters can interact with an AI assistant that explains technical skills, internships, research publications, software projects, and career growth in real time.
+
+The platform focuses on creating a memorable hiring experience by combining modern UI design with Generative AI, enabling recruiters to understand both technical capabilities and problem-solving approaches through natural conversations.`,
+
+    problemStatement:
+      `Traditional portfolios are static and often fail to effectively communicate a candidate's technical expertise, engineering mindset, and project impact. Recruiters typically spend less than a minute reviewing portfolios, making it difficult to showcase the complete journey.`,
+
+    architecture:
+      `Built using a component-based React architecture with TypeScript for scalability and maintainability. The application follows modular design principles where portfolio data, recruiter prompts, projects, and AI responses are separated into reusable modules. The frontend communicates with an AI layer capable of answering recruiter queries dynamically.`,
+
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite",
+      "Framer Motion",
+      "AI Chat",
+      "LLM Integration"
+    ],
+
+    features: [
+      "AI-powered recruiter assistant",
+      "Conversational portfolio experience",
+      "Interactive project showcase",
+      "Career timeline visualization",
+      "IEEE publication showcase",
+      "Technical skills dashboard",
+      "Responsive design",
+      "Dark mode interface"
+    ],
+
+    challenges: [
+      "Designing intuitive conversational UX",
+      "Structuring recruiter-friendly AI responses",
+      "Creating reusable architecture",
+      "Balancing performance with modern animations"
+    ],
+
+    results: [
+      "Transforms traditional portfolio into AI product",
+      "Improved recruiter engagement",
+      "Modern developer branding",
+      "Highly scalable component architecture"
+    ],
+
+    impact:
+      `Provides recruiters with a significantly richer understanding of technical skills and project experience while creating a memorable portfolio experience compared to conventional resume websites.`,
+
+    futureScope:
+      `Integrate voice conversations, multilingual AI support, recruiter analytics, personalized portfolio recommendations, resume generation, and cloud-based AI memory for persistent interactions.`,
+
+    keyLearnings: [
+      "Component-driven architecture",
+      "Scalable frontend development",
+      "AI-assisted user experience design",
+      "Prompt engineering fundamentals",
+      "Building recruiter-focused products"
+    ],
+
+    github: "https://github.com/bhavya27092027/PersonaOS",
+
+    live: "YOUR_DEPLOYMENT",
+
+    color: "#8B5CF6",
+
+  },
+
+  {
+    id: "prepilot-ai",
+
+    name: "PrePilot AI",
+
+    description:
+      "An AI-powered interview preparation platform that simulates real technical and HR interviews using Large Language Models.",
+
+    longDescription:
+      `PrePilot AI helps students prepare for placements through intelligent AI-generated interviews. The platform creates personalized interview experiences based on resumes, selected roles, and technical skills while providing real-time feedback, behavioral question generation, and mock interview simulations.
+
+It combines Full-Stack Development with Generative AI to create an end-to-end interview preparation ecosystem.`,
+
+    problemStatement:
+      `Many students struggle to prepare effectively for interviews due to lack of personalized practice, real-time feedback, and realistic interview simulations.`,
+
+    architecture:
+      `Built on the MERN Stack using React for the frontend, Node.js and Express.js for backend APIs, MongoDB for storing users and interview history, and Gemini API for generating interview questions and intelligent responses.`,
+
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Gemini API",
+      "REST APIs"
+    ],
+
+    features: [
+      "Resume-based interview generation",
+      "Technical interview preparation",
+      "HR interview preparation",
+      "AI-generated questions",
+      "Personalized feedback",
+      "Authentication",
+      "Conversation history"
+    ],
+
+    challenges: [
+      "Maintaining conversational context",
+      "Reducing AI hallucinations",
+      "Prompt optimization",
+      "Managing API token usage"
+    ],
+
+    results: [
+      "Production-ready AI application",
+      "Real-world LLM integration",
+      "Improved interview preparation workflow",
+      "Scalable MERN architecture"
+    ],
+
+    impact:
+      `Provides students with affordable and accessible AI-powered interview coaching, reducing dependency on manual mock interviews while improving interview confidence.`,
+
+    futureScope:
+      `Speech-to-speech mock interviews, emotion detection, coding interview compiler integration, company-specific interview preparation, multilingual support, ATS resume review, recruiter dashboard.`,
+
+    keyLearnings: [
+      "LLM integration",
+      "Prompt engineering",
+      "Authentication systems",
+      "REST API development",
+      "Database schema design",
+      "State management"
+    ],
+
+    github: "https://github.com/bhavya27092027/PrepPilot-AI",
+
+    live: "https://preppilot-ai.netlify.app/",
+
+    color: "#F97316",
+
+  },
+
+  {
+    id: "digivision-ai",
+
+    name: "DigiVision AI",
+
+    description:
+      "CNN-based handwritten digit recognition system trained on the MNIST dataset using Deep Learning.",
+
+    longDescription:
+      `DigiVision AI is a computer vision project developed to recognize handwritten digits using Convolutional Neural Networks (CNNs). The model was trained on the MNIST dataset consisting of 70,000 grayscale handwritten digit images (60,000 training and 10,000 testing samples).
+
+The application performs image preprocessing, normalization, CNN model training, evaluation, and real-time handwritten digit prediction.`,
+
+    problemStatement:
+      `Manual digit recognition is inefficient for automated systems such as cheque processing, postal sorting, and handwritten document analysis. A robust computer vision model can automate this task with high accuracy.`,
+
+    architecture:
+      `Developed using TensorFlow and Keras with a CNN architecture consisting of convolution, pooling, flattening, and dense layers. Image preprocessing includes normalization and reshaping before training. Predictions are generated using the trained model.`,
+
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "NumPy",
+      "OpenCV",
+      "Matplotlib"
+    ],
+
+    features: [
+      "MNIST dataset training",
+      "CNN architecture",
+      "Image preprocessing",
+      "Model evaluation",
+      "Prediction visualization",
+      "High accuracy classification"
+    ],
+
+    challenges: [
+      "Improving prediction accuracy",
+      "Hyperparameter tuning",
+      "Reducing overfitting",
+      "Training optimization"
+    ],
+
+    results: [
+      "High handwritten digit recognition accuracy",
+      "Real-time prediction",
+      "Complete deep learning workflow",
+      "Successful CNN implementation"
+    ],
+
+    impact:
+      `Demonstrates how Deep Learning and Computer Vision can automate handwritten digit recognition for real-world applications including banking, education, logistics, and document digitization.`,
+
+    futureScope:
+      `Support handwritten alphabets, multilingual OCR, custom dataset training, mobile deployment using TensorFlow Lite, edge AI inference, and complete OCR pipeline.`,
+
+    keyLearnings: [
+      "Convolutional Neural Networks",
+      "Deep Learning workflow",
+      "Image preprocessing",
+      "Model evaluation",
+      "Computer Vision fundamentals"
+    ],
+
+    github: "https://github.com/bhavya27092027/ML-Project",
+
+    color: "#2563EB",
+
+  },
+
+  {
+    id: "web-dev-playground",
+
+    name: "Web Development Playground",
+
+    description:
+      "A collection of interactive web applications demonstrating frontend development, JavaScript logic, and responsive UI design.",
+
+    longDescription:
+      `Web Development Playground is a curated collection of interactive web applications built to strengthen frontend engineering, JavaScript problem-solving, and responsive UI development. The collection includes projects such as Tic Tac Toe, KBC Quiz Application, and several interactive applications showcasing DOM manipulation, state management, event handling, and modern web development concepts.`,
+
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Bootstrap"
+    ],
+
+    features: [
+      "Tic Tac Toe Game",
+      "KBC Quiz Application",
+      "Responsive User Interfaces",
+      "Interactive JavaScript Applications",
+      "Reusable UI Components"
+    ],
+
+    challenges: [
+      "Implementing efficient game logic",
+      "Managing application state",
+      "Optimizing user interactions",
+      "Building responsive layouts"
+    ],
+
+    results: [
+      "Strengthened frontend engineering skills",
+      "Improved JavaScript problem-solving",
+      "Built reusable UI components",
+      "Enhanced responsive web development expertise"
+    ],
+
+    github:
+      "https://github.com/bhavya27092027/Web-Development-Minor-Projects",
+
+    color: "#7c3aed",
+
+  },
 ];
 
 
 export const achievements = [
-{
-id: 'gate',
-title: 'GATE Qualified',
-description: 'Qualified GATE, demonstrating strong foundations in Computer Science, Aptitude, and Problem Solving.',
-icon: 'award',
-year: '2026',
-color: '#fbbf24',
-},
-{
-id: 'leetcode',
-title: '319+ Problems Solved',
-description: 'Solved 319+ Data Structures and Algorithms problems across arrays, trees, graphs, dynamic programming, and more.',
-icon: 'code',
-year: '2026',
-color: '#22d3ee',
-},
-{
-id: 'codechef',
-title: 'CodeChef 2★ Coder',
-description: 'Achieved 2-Star rating with a peak rating of 1513 through consistent competitive programming participation.',
-icon: 'trophy',
-year: '2026',
-color: '#ec4899',
-},
-{
-id: 'aiml',
-title: 'AI & Full-Stack Developer',
-description: 'Built AI-powered and full-stack applications using React, Node.js, MongoDB, Machine Learning, and Generative AI.',
-icon: 'cpu',
-year: '2024-Present',
-color: '#8b5cf6',
-},
-{
-id: 'projects',
-title: '10+ Academic & Personal Projects',
-description: 'Developed projects spanning AI/ML, Full-Stack Development, Web Applications, and Interactive Games.',
-icon: 'rocket',
-year: '2024-Present',
-color: '#10b981',
-},
-{
-id: 'learning',
-title: 'Continuous Learner',
-description: 'Actively pursuing advanced knowledge in Deep Learning, Cloud Computing, DSA, and Software Engineering.',
-icon: 'book',
-year: 'Ongoing',
-color: '#00d4ff',
-},
+
+  {
+    id: "ieee",
+    title: "IEEE Research Publication",
+    description:
+      `Published a peer-reviewed research paper in IEEE Conference Proceedings titled "Early Fusion-Based Multimodal Analysis for Identifying Mental Health Conditions from Social Media Data." The research explores multimodal deep learning techniques for detecting mental health conditions from social media content using early fusion strategies.`,
+    icon: "book-open",
+    year: "2026",
+    color: "#3B82F6",
+
+    link: "https://ieeexplore.ieee.org/document/11465665",
+  },
+
+  {
+
+    id: "gate",
+    title: "GATE 2026 Qualified",
+    description:
+      "Qualified the Graduate Aptitude Test in Engineering (GATE), demonstrating strong foundations in Computer Science, Aptitude, Algorithms, Data Structures, Operating Systems, DBMS, and Software Engineering.",
+    icon: "award",
+    year: "2026",
+    color: "#F59E0B",
+  },
+
+  {
+
+    id: "internship",
+    title: "Full Stack Development Intern",
+    description:
+      "Successfully completed Full Stack Development Internship at Unified Mentors Pvt. Ltd., contributing to responsive user interfaces, RESTful APIs, authentication systems, and scalable MERN Stack applications while collaborating in an Agile development environment.",
+    icon: "briefcase",
+    year: "2026",
+    color: "#10B981",
+  },
+
+  {
+
+    id: "webdev",
+
+    title: "Web Development Intern",
+
+    description:
+      "Completed Web Development Internship at Launched Global where I developed responsive web interfaces, improved user experience, and strengthened frontend engineering skills through real-world development projects.",
+
+    icon: "monitor",
+
+    year: "2025",
+
+    color: "#06B6D4",
+
+  },
+
+  {
+
+    id: "leetcode",
+
+    title: "370+ DSA Problems Solved",
+
+    description:
+      "Solved over 370 Data Structures & Algorithms problems covering Arrays, Strings, Trees, Graphs, Binary Search, Dynamic Programming, Sliding Window, Greedy, Heap, Backtracking, and Graph Algorithms while continuously improving analytical thinking and coding efficiency.",
+
+    icon: "code",
+
+    year: "2026",
+
+    color: "#8B5CF6",
+
+  },
+
+  {
+
+    id: "codechef",
+
+    title: "CodeChef 2★ Programmer",
+
+    description:
+      "Achieved CodeChef 2-Star rating with a peak rating of 1570 through consistent participation in competitive programming contests and algorithmic problem solving.",
+
+    icon: "trophy",
+
+    year: "2026",
+
+    color: "#EC4899",
+
+  },
+
+  {
+
+    id: "projects",
+
+    title: "AI & Full Stack Projects",
+
+    description:
+      "Designed and developed multiple production-ready software projects including PersonaOS, PrePilot AI, DigiVision AI, CivicSphere, and several full-stack web applications integrating Artificial Intelligence with modern software engineering.",
+
+    icon: "rocket",
+
+    year: "2024-Present",
+
+    color: "#6366F1",
+
+  },
+
 ];
 
 
 export const experience = [
-{
-id: 'edu-1',
-title: 'B.Tech in Computer Science (AI & ML)',
-company: 'ABES Engineering College',
-duration: '2023 - 2027',
-description:
-'Pursuing Bachelor of Technology with specialization in Artificial Intelligence and Machine Learning. Focused on Data Structures & Algorithms, Full-Stack Development, Machine Learning, and Software Engineering.',
-technologies: [
-'Java',
-'Python',
-'C++',
-'DSA',
-'Machine Learning',
-'Database Systems'
-],
-},
 
-{
-id: 'journey-1',
-title: 'Full Stack Development Journey',
-company: 'Personal Projects & Self Learning',
-duration: '2024 - Present',
-description:
-'Building full-stack web applications using React, Node.js, Express, and MongoDB while exploring modern software development practices.',
-technologies: [
-'React',
-'Node.js',
-'Express.js',
-'MongoDB',
-'JavaScript',
-'TypeScript'
-],
-},
+  {
 
-{
-id: 'journey-2',
-title: 'AI & Machine Learning Exploration',
-company: 'Academic & Personal Projects',
-duration: '2024 - Present',
-description:
-'Working on AI-powered applications and machine learning projects including Interview Preparation Bot and Handwritten Digit Recognition.',
-technologies: [
-'Python',
-'TensorFlow',
-'Keras',
-'Gemini API',
-'NumPy',
-'OpenCV'
-],
-},
+    id: "education",
+
+    title: "Bachelor of Technology (Computer Science - AI & ML)",
+
+    company: "ABES Engineering College",
+
+    duration: "2023 - 2027",
+
+    description:
+      `Pursuing B.Tech specializing in Artificial Intelligence & Machine Learning with strong focus on Software Engineering, Data Structures & Algorithms, Machine Learning, Database Systems, Operating Systems and Web Technologies.`,
+
+    technologies: [
+
+      "C++",
+
+      "Java",
+
+      "Python",
+
+      "Machine Learning",
+
+      "Data Structures",
+
+      "DBMS",
+
+      "Operating Systems",
+
+      "Software Engineering"
+
+    ]
+
+  },
+
+  {
+
+    id: "intern1",
+
+    title: "Full Stack Developer Intern",
+
+    company: "Unified Mentors Pvt. Ltd.",
+
+    duration: "Dec 2025 - Mar 2026",
+
+    description:
+      `Developed scalable MERN Stack applications by building reusable React components, REST APIs, JWT authentication modules, MongoDB integrations, and responsive user interfaces while collaborating within Agile development workflows.`,
+
+    technologies: [
+
+      "React",
+
+      "Node.js",
+
+      "Express.js",
+
+      "MongoDB",
+
+      "JWT",
+
+      "REST APIs",
+
+      "Git"
+
+    ]
+
+  },
+
+  {
+
+    id: "intern2",
+
+    title: "Web Developer Intern",
+
+    company: "Launched Global",
+
+    duration: "May 2025 - Jun 2025",
+
+    description:
+      `Designed responsive frontend interfaces, optimized website performance, enhanced UI responsiveness, and collaborated with developers to improve user experience across multiple web applications.`,
+
+    technologies: [
+
+      "HTML",
+
+      "CSS",
+
+      "JavaScript",
+
+      "React",
+
+      "Bootstrap"
+
+    ]
+
+  },
+
+  {
+
+    id: "research",
+
+    title: "Research & Artificial Intelligence",
+
+    company: "IEEE Conference Publication",
+
+    duration: "2026",
+
+    description:
+      `Published IEEE research focusing on Early Fusion-Based Multimodal Analysis for Identifying Mental Health Conditions from Social Media Data using Artificial Intelligence and Deep Learning techniques.`,
+
+    technologies: [
+
+      "Machine Learning",
+
+      "Deep Learning",
+
+      "Python",
+
+      "TensorFlow",
+
+      "Research"
+
+    ]
+
+  },
+
 ];
 
 
 export const timeline = [
-{
-year: '2023',
-title: 'Started B.Tech Journey',
-description: 'Began B.Tech in Computer Science (AI & ML) at ABES Engineering College and started exploring programming fundamentals.',
-},
 
-{
-year: '2024',
-title: 'Web Development & DSA',
-description: 'Learned HTML, CSS, JavaScript, React, and started solving Data Structures & Algorithms problems consistently.',
-},
+  {
 
-{
-year: '2024',
-title: 'Built First Major Projects',
-description: 'Developed projects including Cab Booking Portal, Tic Tac Toe, KBC Quiz, and several web applications to strengthen development skills.',
-},
+    year: "2023",
 
-{
-year: '2025',
-title: 'Machine Learning Exploration',
-description: 'Worked on Handwritten Digit Recognition and explored Machine Learning, Deep Learning, and AI concepts through practical implementation.',
-},
+    title: "Started Computer Science Journey",
 
-{
-year: '2025',
-title: 'AI-Powered Development',
-description: 'Built AI Interview Preparation Bot and started integrating Generative AI into real-world applications.',
-},
+    description:
+      "Started B.Tech in Computer Science (AI & ML) at ABES Engineering College while building strong programming fundamentals in C++, Java, and Python."
 
-{
-year: '2026',
-title: 'GATE Qualified & Competitive Programming',
-description: 'Qualified GATE and achieved CodeChef 2★ rating while solving 319+ problems on LeetCode.',
-},
+  },
 
-{
-year: 'Future',
-title: 'Software Engineer in Progress',
-description: 'Continuously learning, building impactful products, and preparing for opportunities in Software Development and AI Engineering.',
-},
+  {
+
+    year: "2024",
+
+    title: "Explored Full Stack Development",
+
+    description:
+      "Learned HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and Git while developing multiple web applications and strengthening software engineering fundamentals."
+
+  },
+
+  {
+
+    year: "2025",
+
+    title: "Industry Experience",
+
+    description:
+      "Completed Web Development Internship at Launched Global and Full Stack Development Internship at Unified Mentors Pvt. Ltd., gaining practical software development experience."
+
+  },
+
+  {
+
+    year: "2025",
+
+    title: "Artificial Intelligence Projects",
+
+    description:
+      "Built DigiVision AI, explored Machine Learning, Deep Learning, Computer Vision, and integrated Artificial Intelligence into practical applications."
+
+  },
+
+  {
+
+    year: "2026",
+
+    title: "Generative AI Development",
+
+    description:
+      "Developed PrePilot AI and PersonaOS by combining Full Stack Development with Large Language Models, Prompt Engineering, and modern AI technologies."
+
+  },
+
+  {
+
+    year: "2026",
+
+    title: "IEEE Research Publication",
+
+    description:
+      "Published research paper in IEEE Conference Proceedings on multimodal AI for identifying mental health conditions from social media data."
+
+  },
+
+  {
+
+    year: "2026",
+
+    title: "Competitive Programming",
+
+    description:
+      "Solved 370+ DSA problems, achieved CodeChef 2★ rating, and continuously strengthened algorithmic thinking through regular coding practice."
+
+  },
+
+  {
+
+    year: "Future",
+
+    title: "Software Engineer & AI Engineer",
+
+    description:
+      "Focused on building scalable AI-powered software products, contributing to impactful engineering teams, and continuously learning cutting-edge technologies."
+
+  },
+
 ];
 
 
 export const aiResponses: Record<string, string> = {
-'Tell me about Bhavya': `Bhavya Jain is a B.Tech Computer Science (AI & ML) student at ABES Engineering College. She is passionate about Software Development, Artificial Intelligence, and Problem Solving. Her interests span Full-Stack Development, Data Structures & Algorithms, Machine Learning, and Generative AI. Bhavya enjoys building practical applications that combine modern web technologies with intelligent systems.`,
 
-'What projects has she built?': `Bhavya has worked on several projects across Web Development and AI/ML:
+  "Tell me about Bhavya":
 
-1. AI Interview Preparation Bot – An AI-powered platform that helps students prepare for technical and HR interviews.
+    `Bhavya Jain is a final-year B.Tech Computer Science (Artificial Intelligence & Machine Learning) student at ABES Engineering College with a passion for Software Engineering, Artificial Intelligence, and Full-Stack Development.
 
-2. Handwritten Digit Recognition – A Machine Learning project that classifies handwritten digits using neural networks.
+She enjoys transforming complex ideas into practical software products that solve real-world problems. Her expertise spans MERN Stack Development, Machine Learning, Deep Learning, Generative AI, and Data Structures & Algorithms.
 
-3. Cab Booking Portal – A web-based booking and management system with database integration.
+Beyond academics, Bhavya has completed industry internships, published IEEE research, built AI-powered applications, and consistently strengthened her problem-solving skills through competitive programming.
 
-4. Interactive Web Projects – Including Tic Tac Toe, KBC Quiz Application, and other frontend-focused applications.
+Her long-term goal is to become a Software Engineer building intelligent products that combine scalable backend systems with cutting-edge AI technologies.`,
 
-These projects demonstrate her ability to work across both software development and AI domains.`,
 
-'Why hire Bhavya?': `Bhavya brings a strong combination of technical curiosity, problem-solving ability, and continuous learning. She has hands-on experience with React, Node.js, MongoDB, Machine Learning, and AI integration. Her GATE qualification, competitive programming experience, and project portfolio demonstrate dedication, consistency, and a willingness to take on challenging problems. As a learner and builder, she is constantly improving her skills and applying them to real-world projects.`,
 
-'Explain her strongest skills': `Bhavya's strongest skills include:
+  "Why hire Bhavya?":
 
-1. Data Structures & Algorithms – Solved 319+ problems on LeetCode and actively practices competitive programming.
+    `Bhavya combines strong software engineering fundamentals with practical Artificial Intelligence experience.
 
-2. Full-Stack Development – Experience with React, Node.js, Express.js, MongoDB, JavaScript, and TypeScript.
+Unlike candidates who focus only on coursework, she has demonstrated her abilities through industry internships, IEEE research publication, AI-powered applications, and consistent competitive programming.
 
-3. Artificial Intelligence & Machine Learning – Built projects involving Machine Learning models and AI-powered applications.
+Highlights include:
 
-4. Problem Solving – Demonstrated through GATE qualification and coding platform achievements.
+• IEEE Published Research Author
+• Full Stack Development Intern
+• Web Development Intern
+• 370+ DSA Problems Solved
+• CodeChef 2★ Programmer
+• Built multiple AI-powered applications
+• Strong React, Node.js, MongoDB and Python skills
 
-Her goal is to combine software engineering and AI to build impactful products and solutions.`,
+She learns quickly, adapts to new technologies, and enjoys solving real engineering problems. These qualities make her a promising Software Engineering candidate.`,
+
+
+
+  "What projects has she built?":
+
+    `Bhavya has worked on multiple software engineering and Artificial Intelligence projects.
+
+🚀 PersonaOS
+An AI-powered interactive portfolio where recruiters can communicate with an intelligent assistant to explore projects, achievements, technical skills, internships, and research.
+
+🤖 PrePilot AI
+A Generative AI interview preparation platform providing personalized technical and HR mock interviews using Large Language Models.
+
+🧠 DigiVision AI
+A Deep Learning application capable of recognizing handwritten digits using CNNs trained on the MNIST dataset containing 70,000 handwritten images.
+
+🌍 CivicSphere
+A crowdsourced civic issue reporting platform designed to improve communication between citizens and local authorities.
+
+🚖 Cab Booking Portal
+A MERN Stack web application implementing authentication, database management, booking workflows, and responsive user interfaces.
+
+Together, these projects demonstrate Bhavya's ability to combine Software Engineering with Artificial Intelligence to build practical applications.`,
+
+
+
+  "Explain her strongest skills":
+
+    `Bhavya's strongest technical areas include:
+
+💻 Full Stack Development
+React.js
+Node.js
+Express.js
+MongoDB
+REST APIs
+JWT Authentication
+
+🤖 Artificial Intelligence
+Machine Learning
+Deep Learning
+TensorFlow
+Keras
+Generative AI
+Prompt Engineering
+LLM Integration
+
+📚 Programming Languages
+C++
+Java
+Python
+JavaScript
+TypeScript
+
+🧠 Problem Solving
+370+ DSA Problems
+Arrays
+Trees
+Graphs
+Dynamic Programming
+Sliding Window
+Greedy
+Binary Search
+Heap
+
+She continuously expands her knowledge by building real-world software products rather than only studying theoretical concepts.`,
+
+
+
+  "Tell me about her IEEE publication":
+
+    `Bhavya published a research paper in IEEE Conference Proceedings titled:
+
+"Early Fusion-Based Multimodal Analysis for Identifying Mental Health Conditions from Social Media Data."
+
+The research investigates how Artificial Intelligence can identify mental health conditions by combining multiple modalities extracted from social media content.
+
+The work focuses on multimodal learning, feature fusion techniques, and intelligent classification models that improve prediction performance over single-modal approaches.
+
+This publication demonstrates her interest in applied Artificial Intelligence, Deep Learning, and research-driven problem solving.`,
+
+
+
+  "Tell me about her internships":
+
+    `Bhavya has completed two professional internships.
+
+🏢 Unified Mentors Pvt. Ltd.
+Full Stack Developer Intern
+
+Worked on MERN Stack applications involving React, Node.js, Express, MongoDB, REST APIs, JWT Authentication, responsive UI development, and backend integration.
+
+🏢 Launched Global
+Web Developer Intern
+
+Developed responsive web interfaces, improved website performance, collaborated with development teams, and strengthened frontend engineering skills.
+
+These internships provided practical software engineering experience beyond classroom learning.`,
+
+
+
+  "Is she ready for Software Engineering roles?":
+
+    `Yes.
+
+Bhavya has built a solid foundation through:
+
+✅ Production-ready projects
+✅ Industry internships
+✅ IEEE publication
+✅ Competitive programming
+✅ Full Stack Development
+✅ Machine Learning projects
+✅ Git & collaborative development
+✅ Database design
+✅ API development
+
+She demonstrates both technical knowledge and practical implementation skills required for entry-level Software Engineering positions while maintaining a strong learning mindset.`,
+
+
+
+  "What technologies does she use?":
+
+    `Frontend
+React.js
+TypeScript
+JavaScript
+Tailwind CSS
+HTML
+CSS
+
+Backend
+Node.js
+Express.js
+REST APIs
+JWT
+
+Databases
+MongoDB
+MySQL
+PostgreSQL
+
+Artificial Intelligence
+TensorFlow
+Keras
+OpenCV
+Scikit-Learn
+Gemini API
+Generative AI
+
+Programming
+C++
+Java
+Python
+
+Tools
+Git
+GitHub
+Postman
+Thunder Client
+VS Code
+
+These technologies enable her to design, develop, deploy, and maintain complete software applications.`,
+
+
+
+  "What are her future goals?":
+
+    `Bhavya aims to become a Software Engineer specializing in Artificial Intelligence and scalable backend systems.
+
+She wants to build intelligent products that positively impact users while continuously learning modern technologies including Large Language Models, Cloud Computing, Distributed Systems, and advanced Machine Learning.
+
+Her long-term vision is to contribute to innovative engineering teams where Software Engineering and AI intersect to solve meaningful real-world problems.`,
+
 };
 
 
-export const visitorQuestions: Record<string, string[]> = {
+export const visitorQuestions = {
+
   recruiter: [
-    'Tell me about Bhavya',
-    'Why hire Bhavya?',
-    'What is her work style?',
-    'View past projects',
+
+    "Tell me about Bhavya",
+
+    "Why hire Bhavya?",
+
+    "Tell me about her internships",
+
+    "Tell me about her IEEE publication",
+
+    "What projects has she built?",
+
+    "Explain her strongest skills",
+
+    "Is she ready for Software Engineering roles?",
+
+    "What technologies does she use?"
+
   ],
+
   engineer: [
-    'What projects has she built?',
-    'Explain her strongest skills',
-    'Does she contribute to open source?',
-    'What tech stack does she prefer?',
+
+    "What projects has she built?",
+
+    "Explain her strongest skills",
+
+    "Tell me about her IEEE publication",
+
+    "What technologies does she use?",
+
+    "How does PersonaOS work?"
+
   ],
+
   founder: [
-    'Why hire Bhavya?',
-    'Can she lead a technical team?',
-    'What startup experience does she have?',
-    'View her projects',
+
+    "Why hire Bhavya?",
+
+    "What projects has she built?",
+
+    "Is she ready for Software Engineering roles?",
+
+    "What are her future goals?"
+
   ],
+
   student: [
-    'How did she start coding?',
-    'What should I learn first?',
-    'How to prepare for internships?',
-    'Any advice for students?',
+
+    "Tell me about Bhavya",
+
+    "What projects has she built?",
+
+    "Explain her strongest skills",
+
+    "What technologies does she use?"
+
   ],
+
   explorer: [
-    'Tell me about Bhavya',
-    'What projects has she built?',
-    'What technologies does she use?',
-    'View her achievements',
-  ],
+
+    "Tell me about Bhavya",
+
+    "Tell me about her IEEE publication",
+
+    "What projects has she built?",
+
+    "Why hire Bhavya?"
+
+  ]
+
 };

@@ -11,10 +11,15 @@ export interface Project {
   features: string[];
   challenges: string[];
   results: string[];
-  github?: string;
+  github: string;
   live?: string;
-  image?: string;
   color: string;
+  problemStatement?: string;
+  architecture?: string;
+  impact?: string;
+  futureScope?: string;
+  keyLearnings?: string[];
+  metrics?: string[];
 }
 
 interface AppState {

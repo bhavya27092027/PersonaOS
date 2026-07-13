@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { achievements } from '../../data/content';
-import { Award, Trophy, Code, Cloud, Github, Book, X, Calendar, Sparkles } from 'lucide-react';
+import { Award, Trophy, Code, Cloud, Github, Book, X, Calendar, Sparkles, ExternalLink } from 'lucide-react';
 
 const iconMap: Record<string, typeof Award> = {
   award: Award,
@@ -119,6 +119,17 @@ function AchievementDetail({ achievement, onClose }: AchievementDetailProps) {
                 {achievement.title}
               </h3>
               <p className="font-rajdhani text-gray-300">{achievement.description}</p>
+              {achievement.link && (
+                <a
+                  href={achievement.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-5 px-4 py-2 rounded-lg bg-cyber-blue/20 text-cyber-blue hover:bg-cyber-blue/30 transition-all"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  View IEEE Publication
+                </a>
+              )}
             </motion.div>
           </div>
 

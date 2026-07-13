@@ -1,12 +1,12 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
-import { Play, X, Zap, Bug, Brain, Trophy, Clock, Star } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Play, Zap, Bug, Brain, Star, LucideIcon } from 'lucide-react';
+import { useAppStore } from '../../store/useAppStore';
 
 interface Game {
-  id: string;
+  id: 'tech-quiz' | 'debug-code' | 'code-rush';
   title: string;
   description: string;
-  icon: typeof Zap;
+  icon: LucideIcon;
   color: string;
   difficulty: 'Easy' | 'Medium' | 'Hard';
   rules: string[];
@@ -14,176 +14,52 @@ interface Game {
 
 const games: Game[] = [
   {
-    id: 'catch-skill',
-    title: 'Catch The Skill',
-    description: 'Catch falling skill icons to power up your developer profile',
-    icon: Zap,
-    color: '#fbbf24',
-    difficulty: 'Easy',
-    rules: ['Use arrow keys to move', 'Catch skill icons', 'Avoid bugs', 'Score points'],
+    id: 'tech-quiz',
+    title: 'Tech Quiz',
+    description: 'Test your knowledge across algorithms, data structures, web dev, and more.',
+    icon: Brain,
+    color: '#7c3aed',
+
+    difficulty: "Easy",
+    rules: [
+      "Choose a category",
+      "Select difficulty",
+      "Answer correctly",
+      "Earn XP"
+    ],
   },
   {
     id: 'debug-code',
     title: 'Debug The Code',
-    description: 'Find and fix bugs in the code snippets before time runs out',
+    description: 'Spot bugs in real code snippets across C++, Java, JavaScript, and Python.',
     icon: Bug,
     color: '#10b981',
     difficulty: 'Medium',
-    rules: ['Read the code carefully', 'Identify the bug', 'Select the correct fix', 'Beat the timer'],
+    rules: [
+      "Select a language",
+      "Identify the bug",
+      "Fix the code",
+      "Earn XP"
+    ]
   },
   {
-    id: 'tech-quiz',
-    title: 'Tech Quiz',
-    description: 'Test your knowledge with challenging tech questions',
-    icon: Brain,
-    color: '#7c3aed',
+    id: 'code-rush',
+    title: 'Code Rush',
+    description: 'Rapid-fire programming challenge.',
+    icon: Zap,
+    color: '#fbbf24',
     difficulty: 'Hard',
-    rules: ['Answer multiple choice', 'Race against time', 'Earn XP for correct answers', 'Climb the leaderboard'],
+    rules: [
+      "Answer questions quickly",
+      "Earn points for speed and accuracy",
+      "Compete against others"
+    ]
   },
 ];
 
-function GameModal({ game, onClose }: { game: Game; onClose: () => void }) {
-  return (
-    <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <div className="absolute inset-0 bg-cyber-dark/95 backdrop-blur-xl" onClick={onClose} />
-
-      <motion.div
-        className="relative z-10 w-full max-w-2xl"
-        initial={{ scale: 0.8, y: 50 }}
-        animate={{ scale: 1, y: 0 }}
-        exit={{ scale: 0.8, y: 50 }}
-        transition={{ type: 'spring', damping: 20 }}
-      >
-        <div
-          className="glass-panel-strong rounded-3xl overflow-hidden"
-          style={{ borderColor: `${game.color}30` }}
-        >
-          {/* Header */}
-          <div className="relative p-6 border-b border-white/10">
-            <button
-              onClick={onClose}
-              className="absolute top-4 right-4 p-2 glass-panel rounded-lg hover:bg-white/10 transition-colors"
-              data-hoverable
-            >
-              <X className="w-5 h-5 text-white" />
-            </button>
-
-            <div className="flex items-center gap-4">
-              <motion.div
-                className="w-16 h-16 rounded-2xl flex items-center justify-center"
-                style={{ backgroundColor: `${game.color}20` }}
-                animate={{ rotate: [0, 360] }}
-                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-              >
-                <game.icon className="w-8 h-8" style={{ color: game.color }} />
-              </motion.div>
-              <div>
-                <h3 className="font-orbitron text-2xl font-bold text-white">{game.title}</h3>
-                <p className="font-rajdhani text-gray-400">{game.description}</p>
-              </div>
-            </div>
-
-            {/* Stats */}
-            <div className="flex gap-3 mt-4">
-              <div className="flex items-center gap-2 px-3 py-1 glass-panel rounded-full">
-                <Trophy className="w-4 h-4 text-cyber-yellow" />
-                <span className="font-space-mono text-xs text-gray-400">High Score: 0</span>
-              </div>
-              <div className="flex items-center gap-2 px-3 py-1 glass-panel rounded-full">
-                <Clock className="w-4 h-4 text-cyber-cyan" />
-                <span className="font-space-mono text-xs text-gray-400">Best Time: --:--</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Game Preview */}
-          <div className="p-8">
-            {/* Placeholder game UI */}
-            <div
-              className="relative aspect-video rounded-2xl overflow-hidden glass-panel mb-6"
-              style={{
-                background: `linear-gradient(135deg, ${game.color}10 0%, transparent 50%)`,
-              }}
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <motion.div
-                  className="text-center"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                >
-                  <motion.div
-                    className="w-20 h-20 mx-auto mb-4 rounded-2xl flex items-center justify-center"
-                    style={{ backgroundColor: `${game.color}20` }}
-                    animate={{ scale: [1, 1.1, 1] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                  >
-                    <game.icon className="w-10 h-10" style={{ color: game.color }} />
-                  </motion.div>
-                  <p className="font-orbitron text-lg text-white mb-2">COMING SOON</p>
-                  <p className="font-rajdhani text-gray-400 text-sm">This game is under development</p>
-                </motion.div>
-              </div>
-
-              {/* Animated elements */}
-              <motion.div
-                className="absolute w-4 h-4 rounded-full"
-                style={{ backgroundColor: game.color }}
-                animate={{
-                  x: ['10%', '90%', '10%'],
-                  y: ['20%', '80%', '20%'],
-                }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'linear' }}
-              />
-            </div>
-
-            {/* Rules */}
-            <div className="mb-6">
-              <h4 className="font-rajdhani text-lg font-semibold text-white mb-3">How to Play</h4>
-              <div className="grid grid-cols-2 gap-2">
-                {game.rules.map((rule, i) => (
-                  <div
-                    key={i}
-                    className="flex items-center gap-2 p-2 glass-panel rounded-lg"
-                  >
-                    <div
-                      className="w-6 h-6 rounded-full flex items-center justify-center"
-                      style={{ backgroundColor: `${game.color}20` }}
-                    >
-                      <span className="font-orbitron text-xs" style={{ color: game.color }}>{i + 1}</span>
-                    </div>
-                    <span className="font-rajdhani text-sm text-gray-300">{rule}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Play Button */}
-            <motion.button
-              className="w-full py-4 rounded-xl font-rajdhani text-lg font-semibold flex items-center justify-center gap-2 disabled:opacity-50"
-              style={{
-                background: `linear-gradient(135deg, ${game.color}60, ${game.color}30)`,
-                color: 'white',
-              }}
-              disabled
-              data-hoverable
-            >
-              <Play className="w-5 h-5" />
-              Coming Soon
-            </motion.button>
-          </div>
-        </div>
-      </motion.div>
-    </motion.div>
-  );
-}
 
 export function SkillChallenges() {
-  const [selectedGame, setSelectedGame] = useState<Game | null>(null);
+  const { setCurrentGame } = useAppStore();
 
   return (
     <section className="relative py-32 px-4 overflow-hidden">
@@ -213,7 +89,7 @@ export function SkillChallenges() {
             Skill Challenges
           </h2>
           <p className="font-rajdhani text-gray-400 text-lg max-w-2xl mx-auto">
-            Test your abilities with interactive games. Coming soon to this portfolio!
+            Test your abilities with interactive games. Sharpen your problem-solving skills through interactive developer challenges.
           </p>
         </motion.div>
       </div>
@@ -231,7 +107,21 @@ export function SkillChallenges() {
             >
               <motion.div
                 className="relative group glass-panel rounded-2xl overflow-hidden h-full"
-                onClick={() => setSelectedGame(game)}
+                onClick={() => {
+                  switch (game.id) {
+                    case "tech-quiz":
+                      setCurrentGame("tech-quiz");
+                      break;
+
+                    case "debug-code":
+                      setCurrentGame("debug-code");
+                      break;
+
+                    case "code-rush":
+                      setCurrentGame("code-rush");
+                      break;
+                  }
+                }}
                 whileHover={{ y: -5 }}
                 style={{ borderColor: `${game.color}20` }}
                 data-hoverable
@@ -299,12 +189,6 @@ export function SkillChallenges() {
         </div>
       </div>
 
-      {/* Game Modal */}
-      <AnimatePresence>
-        {selectedGame && (
-          <GameModal game={selectedGame} onClose={() => setSelectedGame(null)} />
-        )}
-      </AnimatePresence>
     </section>
   );
 }

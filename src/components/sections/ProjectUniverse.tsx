@@ -295,7 +295,8 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
         {/* Planet Name */}
         <motion.div
           className="absolute -bottom-4 left-0 right-0 text-center"
-          animate={{ y: hovered => hovered ? -5 : 0 }}
+          initial={{ y: 0 }}
+          whileHover={{ y: -5 }}
         >
           <h3
             className="font-orbitron text-lg font-bold"
