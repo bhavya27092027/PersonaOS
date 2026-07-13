@@ -30,7 +30,7 @@ A futuristic developer portfolio built to showcase technical expertise through i
 
 ### 🌐 Live Website
 
-https://YOUR_NETLIFY_LINK
+https://persona-os.netlify.app/
 
 </div>
 
