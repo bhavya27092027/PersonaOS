@@ -17,7 +17,7 @@ export const personalInfo = {
 
   github: "https://github.com/bhavya27092027",
 
-  resume: "/Bhavya_Jain_Resume.pdf",
+  resume: "/Bhavya_Jain_SDE_Resume.pdf",
 
   location: "Ghaziabad, India",
 
@@ -133,6 +133,79 @@ export const skills = [
 
 
 export const projects: Project[] = [
+  {
+    id: "page-pulse",
+
+    name: "Page Pulse",
+
+    description:
+      "A production-grade full-stack website auditing platform for analyzing website health, performance, and reliability.",
+
+    longDescription: `Page Pulse is a full-stack website auditing platform that analyzes URLs and generates detailed health reports. It performs website validation, health checks, caching, rate limiting, and REST API-based analysis while providing a clean dashboard for users.
+
+The application follows a scalable React + Express architecture and is deployed in production using Netlify and Railway.`,
+
+    problemStatement:
+      `Developers and businesses often require a quick way to validate website availability and health without relying on multiple tools. Page Pulse consolidates these checks into a single platform.`,
+
+    architecture:
+      `Built using React, TypeScript, Express.js, and Node.js with modular REST APIs. The backend implements caching, rate limiting, and validation logic, while the frontend provides an intuitive dashboard for audit reports.`,
+
+    technologies: [
+      "React",
+      "TypeScript",
+      "Express.js",
+      "Node.js",
+      "Tailwind CSS",
+      "REST APIs",
+      "Railway",
+      "Netlify"
+    ],
+
+    features: [
+      "Website health analysis",
+      "REST API integration",
+      "Caching",
+      "Rate limiting",
+      "URL validation",
+      "Responsive dashboard",
+      "Production deployment"
+    ],
+
+    challenges: [
+      "Backend API optimization",
+      "Caching strategy",
+      "Request validation",
+      "Production deployment"
+    ],
+
+    results: [
+      "Production-ready full-stack application",
+      "Scalable backend architecture",
+      "Reliable website health reports",
+      "Cloud deployment on Railway & Netlify"
+    ],
+
+    impact:
+      `Provides developers with a fast and reliable way to analyze website health through a modern full-stack application.`,
+
+    futureScope:
+      `Integrate Lighthouse reports, SEO analysis, accessibility checks, historical monitoring, and scheduled website audits.`,
+
+    keyLearnings: [
+      "REST API development",
+      "Backend architecture",
+      "Caching strategies",
+      "Rate limiting",
+      "Production deployment"
+    ],
+
+    github: "https://github.com/bhavya27092027/page-pulse",
+
+    live: "https://page-pulse-analyzer.netlify.app/",
+
+    color: "#10B981",
+  },
   {
     id: "persona-os",
 
@@ -354,55 +427,7 @@ The application performs image preprocessing, normalization, CNN model training,
 
     color: "#2563EB",
 
-  },
-
-  {
-    id: "web-dev-playground",
-
-    name: "Web Development Playground",
-
-    description:
-      "A collection of interactive web applications demonstrating frontend development, JavaScript logic, and responsive UI design.",
-
-    longDescription:
-      `Web Development Playground is a curated collection of interactive web applications built to strengthen frontend engineering, JavaScript problem-solving, and responsive UI development. The collection includes projects such as Tic Tac Toe, KBC Quiz Application, and several interactive applications showcasing DOM manipulation, state management, event handling, and modern web development concepts.`,
-
-    technologies: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "React",
-      "Bootstrap"
-    ],
-
-    features: [
-      "Tic Tac Toe Game",
-      "KBC Quiz Application",
-      "Responsive User Interfaces",
-      "Interactive JavaScript Applications",
-      "Reusable UI Components"
-    ],
-
-    challenges: [
-      "Implementing efficient game logic",
-      "Managing application state",
-      "Optimizing user interactions",
-      "Building responsive layouts"
-    ],
-
-    results: [
-      "Strengthened frontend engineering skills",
-      "Improved JavaScript problem-solving",
-      "Built reusable UI components",
-      "Enhanced responsive web development expertise"
-    ],
-
-    github:
-      "https://github.com/bhavya27092027/Web-Development-Minor-Projects",
-
-    color: "#7c3aed",
-
-  },
+  }
 ];
 
 
