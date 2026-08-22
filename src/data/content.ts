@@ -134,152 +134,87 @@ export const skills = [
 
 export const projects: Project[] = [
   {
-    id: "page-pulse",
+    id: "recoverai",
 
-    name: "Page Pulse",
+    name: "RecoverAI",
 
     description:
-      "A production-grade full-stack website auditing platform for analyzing website health, performance, and reliability.",
+      "An autonomous AI revenue recovery platform that analyzes failed payments, predicts recovery likelihood, and executes intelligent recovery workflows.",
 
-    longDescription: `Page Pulse is a full-stack website auditing platform that analyzes URLs and generates detailed health reports. It performs website validation, health checks, caching, rate limiting, and REST API-based analysis while providing a clean dashboard for users.
+    longDescription: `RecoverAI is a full-stack fintech SaaS platform designed to recover revenue lost through failed customer payments. It analyzes payment failures, evaluates recovery probability using explainable AI heuristics, prioritizes high-value recovery opportunities, and supports autonomous recovery workflows.
 
-The application follows a scalable React + Express architecture and is deployed in production using Netlify and Railway.`,
+The platform integrates Razorpay TEST MODE for payment processing and webhook events, while providing real-time transaction tracking, recovery analytics, AI insights, and merchant-specific recovery policies.`,
 
     problemStatement:
-      `Developers and businesses often require a quick way to validate website availability and health without relying on multiple tools. Page Pulse consolidates these checks into a single platform.`,
+      `Failed customer payments represent significant lost revenue for businesses, while traditional retry mechanisms often use static rules and treat every failure the same way. RecoverAI transforms failed payments into prioritized recovery opportunities using intelligent, data-driven recovery decisions.`,
 
     architecture:
-      `Built using React, TypeScript, Express.js, and Node.js with modular REST APIs. The backend implements caching, rate limiting, and validation logic, while the frontend provides an intuitive dashboard for audit reports.`,
+      `Built using React, TypeScript, Node.js, Express.js, and MongoDB with a modular REST API architecture. The platform uses merchant-scoped data isolation, JWT-based authentication, explainable recovery heuristics, Razorpay TEST MODE integration, webhook processing, and persistent transaction tracking. The frontend is deployed on Netlify and the backend on Railway.`,
 
     technologies: [
       "React",
       "TypeScript",
-      "Express.js",
       "Node.js",
-      "Tailwind CSS",
+      "Express.js",
+      "MongoDB",
+      "Razorpay",
       "REST APIs",
+      "JWT",
       "Railway",
       "Netlify"
     ],
 
     features: [
-      "Website health analysis",
-      "REST API integration",
-      "Caching",
-      "Rate limiting",
-      "URL validation",
-      "Responsive dashboard",
-      "Production deployment"
+      "Failed payment analysis",
+      "AI recovery probability scoring",
+      "Autonomous recovery workflows",
+      "Recovery strategy recommendations",
+      "Razorpay TEST MODE integration",
+      "Webhook processing",
+      "Transaction tracking",
+      "Recovery analytics",
+      "AI financial insights",
+      "Merchant-scoped data isolation"
     ],
 
     challenges: [
-      "Backend API optimization",
-      "Caching strategy",
-      "Request validation",
+      "Designing recovery decision logic",
+      "Payment webhook processing",
+      "Webhook idempotency",
+      "Cross-origin authentication",
+      "Merchant data isolation",
       "Production deployment"
     ],
 
     results: [
-      "Production-ready full-stack application",
-      "Scalable backend architecture",
-      "Reliable website health reports",
-      "Cloud deployment on Railway & Netlify"
+      "Production-ready fintech SaaS platform",
+      "Autonomous payment recovery workflow",
+      "Real-time recovery analytics",
+      "Razorpay TEST MODE integration",
+      "Production deployment on Railway & Netlify"
     ],
 
     impact:
-      `Provides developers with a fast and reliable way to analyze website health through a modern full-stack application.`,
+      `Transforms failed payment events into actionable recovery opportunities, helping merchants identify high-probability recoveries and automate appropriate recovery actions.`,
 
     futureScope:
-      `Integrate Lighthouse reports, SEO analysis, accessibility checks, historical monitoring, and scheduled website audits.`,
+      `Integrate real payment traffic, advanced machine learning models, adaptive recovery strategies, additional payment gateways, predictive customer lifetime value, and real-time recovery optimization.`,
 
     keyLearnings: [
+      "Fintech application architecture",
+      "Payment gateway integration",
+      "Webhook engineering",
+      "AI decision systems",
       "REST API development",
-      "Backend architecture",
-      "Caching strategies",
-      "Rate limiting",
+      "Authentication and authorization",
       "Production deployment"
     ],
 
-    github: "https://github.com/bhavya27092027/page-pulse",
+    github: "https://github.com/bhavya27092027/RecoverAI",
 
-    live: "https://page-pulse-analyzer.netlify.app/",
+    live: "https://recoverai-revenue.netlify.app/",
 
     color: "#10B981",
-  },
-  {
-    id: "persona-os",
-
-    name: "PersonaOS",
-
-    description:
-      "An AI-powered interactive portfolio that transforms a traditional resume into a conversational recruiter experience.",
-
-    longDescription:
-      `PersonaOS is an intelligent portfolio platform designed to replace static resumes with an AI-powered conversational interface. Instead of simply viewing projects and achievements, recruiters can interact with an AI assistant that explains technical skills, internships, research publications, software projects, and career growth in real time.
-
-The platform focuses on creating a memorable hiring experience by combining modern UI design with Generative AI, enabling recruiters to understand both technical capabilities and problem-solving approaches through natural conversations.`,
-
-    problemStatement:
-      `Traditional portfolios are static and often fail to effectively communicate a candidate's technical expertise, engineering mindset, and project impact. Recruiters typically spend less than a minute reviewing portfolios, making it difficult to showcase the complete journey.`,
-
-    architecture:
-      `Built using a component-based React architecture with TypeScript for scalability and maintainability. The application follows modular design principles where portfolio data, recruiter prompts, projects, and AI responses are separated into reusable modules. The frontend communicates with an AI layer capable of answering recruiter queries dynamically.`,
-
-    technologies: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Vite",
-      "Framer Motion",
-      "AI Chat",
-      "LLM Integration"
-    ],
-
-    features: [
-      "AI-powered recruiter assistant",
-      "Conversational portfolio experience",
-      "Interactive project showcase",
-      "Career timeline visualization",
-      "IEEE publication showcase",
-      "Technical skills dashboard",
-      "Responsive design",
-      "Dark mode interface"
-    ],
-
-    challenges: [
-      "Designing intuitive conversational UX",
-      "Structuring recruiter-friendly AI responses",
-      "Creating reusable architecture",
-      "Balancing performance with modern animations"
-    ],
-
-    results: [
-      "Transforms traditional portfolio into AI product",
-      "Improved recruiter engagement",
-      "Modern developer branding",
-      "Highly scalable component architecture"
-    ],
-
-    impact:
-      `Provides recruiters with a significantly richer understanding of technical skills and project experience while creating a memorable portfolio experience compared to conventional resume websites.`,
-
-    futureScope:
-      `Integrate voice conversations, multilingual AI support, recruiter analytics, personalized portfolio recommendations, resume generation, and cloud-based AI memory for persistent interactions.`,
-
-    keyLearnings: [
-      "Component-driven architecture",
-      "Scalable frontend development",
-      "AI-assisted user experience design",
-      "Prompt engineering fundamentals",
-      "Building recruiter-focused products"
-    ],
-
-    github: "https://github.com/bhavya27092027/PersonaOS",
-
-    live: "YOUR_DEPLOYMENT",
-
-    color: "#8B5CF6",
-
   },
 
   {
@@ -355,7 +290,6 @@ It combines Full-Stack Development with Generative AI to create an end-to-end in
     live: "https://preppilot-ai.netlify.app/",
 
     color: "#F97316",
-
   },
 
   {
@@ -403,7 +337,7 @@ The application performs image preprocessing, normalization, CNN model training,
     ],
 
     results: [
-      "High handwritten digit recognition accuracy",
+      "92.8% classification accuracy",
       "Real-time prediction",
       "Complete deep learning workflow",
       "Successful CNN implementation"
@@ -426,7 +360,6 @@ The application performs image preprocessing, normalization, CNN model training,
     github: "https://github.com/bhavya27092027/ML-Project",
 
     color: "#2563EB",
-
   }
 ];
 
@@ -488,10 +421,10 @@ export const achievements = [
 
     id: "leetcode",
 
-    title: "370+ DSA Problems Solved",
+    title: "500+ DSA Problems Solved",
 
     description:
-      "Solved over 370 Data Structures & Algorithms problems covering Arrays, Strings, Trees, Graphs, Binary Search, Dynamic Programming, Sliding Window, Greedy, Heap, Backtracking, and Graph Algorithms while continuously improving analytical thinking and coding efficiency.",
+      "Solved over 500 Data Structures & Algorithms problems covering Arrays, Strings, Trees, Graphs, Binary Search, Dynamic Programming, Sliding Window, Greedy, Heap, Backtracking, and Graph Algorithms while continuously improving analytical thinking and coding efficiency.",
 
     icon: "code",
 
@@ -505,10 +438,10 @@ export const achievements = [
 
     id: "codechef",
 
-    title: "CodeChef 2★ Programmer",
+    title: "CodeChef 3★ Programmer",
 
     description:
-      "Achieved CodeChef 2-Star rating with a peak rating of 1570 through consistent participation in competitive programming contests and algorithmic problem solving.",
+      "Achieved CodeChef 3-Star rating with a peak rating of 1570 through consistent participation in competitive programming contests and algorithmic problem solving.",
 
     icon: "trophy",
 
