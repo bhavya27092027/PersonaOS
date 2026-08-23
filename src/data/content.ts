@@ -360,6 +360,80 @@ The application performs image preprocessing, normalization, CNN model training,
     github: "https://github.com/bhavya27092027/ML-Project",
 
     color: "#2563EB",
+  },
+
+  {
+    id: "page-pulse",
+
+    name: "Page Pulse",
+
+    description:
+      "A production-grade full-stack website auditing platform for analyzing website health, performance, and reliability.",
+
+    longDescription: `Page Pulse is a full-stack website auditing platform that analyzes URLs and generates detailed health reports. It performs website validation, health checks, caching, rate limiting, and REST API-based analysis while providing a clean dashboard for users.
+
+The application follows a scalable React + Express architecture and is deployed in production using Netlify and Railway.`,
+
+    problemStatement:
+      `Developers and businesses often require a quick way to validate website availability and health without relying on multiple tools. Page Pulse consolidates these checks into a single platform.`,
+
+    architecture:
+      `Built using React, TypeScript, Express.js, and Node.js with modular REST APIs. The backend implements caching, rate limiting, and validation logic, while the frontend provides an intuitive dashboard for audit reports.`,
+
+    technologies: [
+      "React",
+      "TypeScript",
+      "Express.js",
+      "Node.js",
+      "Tailwind CSS",
+      "REST APIs",
+      "Railway",
+      "Netlify"
+    ],
+
+    features: [
+      "Website health analysis",
+      "REST API integration",
+      "Caching",
+      "Rate limiting",
+      "URL validation",
+      "Responsive dashboard",
+      "Production deployment"
+    ],
+
+    challenges: [
+      "Backend API optimization",
+      "Caching strategy",
+      "Request validation",
+      "Production deployment"
+    ],
+
+    results: [
+      "Production-ready full-stack application",
+      "Scalable backend architecture",
+      "Reliable website health reports",
+      "Cloud deployment on Railway & Netlify"
+    ],
+
+    impact:
+      `Provides developers with a fast and reliable way to analyze website health through a modern full-stack application.`,
+
+    futureScope:
+      `Integrate Lighthouse reports, SEO analysis, accessibility checks, historical monitoring, and scheduled website audits.`,
+
+    keyLearnings: [
+      "REST API development",
+      "Backend architecture",
+      "Caching strategies",
+      "Rate limiting",
+      "Production deployment"
+    ],
+
+    github: "https://github.com/bhavya27092027/page-pulse",
+
+    live: "https://page-pulse-analyzer.netlify.app/",
+
+    color: "#10B981",
   }
 ];
 
@@ -424,7 +498,7 @@ export const achievements = [
     title: "500+ DSA Problems Solved",
 
     description:
-      "Solved over 500 Data Structures & Algorithms problems covering Arrays, Strings, Trees, Graphs, Binary Search, Dynamic Programming, Sliding Window, Greedy, Heap, Backtracking, and Graph Algorithms while continuously improving analytical thinking and coding efficiency.",
+      "Solved over 500+ Data Structures & Algorithms problems covering Arrays, Strings, Trees, Graphs, Binary Search, Dynamic Programming, Sliding Window, Greedy, Heap, Backtracking, and Graph Algorithms while continuously improving analytical thinking and coding efficiency.",
 
     icon: "code",
 
@@ -441,7 +515,7 @@ export const achievements = [
     title: "CodeChef 3★ Programmer",
 
     description:
-      "Achieved CodeChef 3-Star rating with a peak rating of 1570 through consistent participation in competitive programming contests and algorithmic problem solving.",
+      "Achieved CodeChef 3-Star rating with a peak rating of 1635 through consistent participation in competitive programming contests and algorithmic problem solving.",
 
     icon: "trophy",
 

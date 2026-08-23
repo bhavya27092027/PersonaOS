@@ -13,10 +13,6 @@
   --cyber-dark: #0a0a0f;
 }
 
-* {
-  cursor: none !important;
-}
-
 body {
   margin: 0;
   padding: 0;

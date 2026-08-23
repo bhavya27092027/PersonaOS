@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useAppStore } from './store/useAppStore';
-
+import { CustomCursor } from './components/CustomCursor';
 import { BootSequence } from './components/BootSequence';
 import { ParticleBackground } from './components/ParticleBackground';
 import { Hero } from './components/Hero';
@@ -40,6 +40,8 @@ function App() {
 
   return (
     <div className="relative min-h-screen bg-cyber-dark overflow-x-hidden">
+      {/* Custom Cursor */}
+      <CustomCursor />
 
       {/* Boot Sequence */}
       <BootSequence />
