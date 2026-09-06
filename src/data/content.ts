@@ -515,7 +515,7 @@ export const achievements = [
     title: "CodeChef 3★ Programmer",
 
     description:
-      "Achieved CodeChef 3-Star rating with a peak rating of 1635 through consistent participation in competitive programming contests and algorithmic problem solving.",
+      "Achieved CodeChef 3-Star rating with a peak rating of 1700 through consistent participation in competitive programming contests and algorithmic problem solving.",
 
     icon: "trophy",
 
