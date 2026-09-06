@@ -509,20 +509,18 @@ export const achievements = [
   },
 
   {
-
     id: "codechef",
 
     title: "CodeChef 3★ Programmer",
 
     description:
-      "Achieved CodeChef 3-Star rating with a peak rating of 1700 through consistent participation in competitive programming contests and algorithmic problem solving.",
+      "Achieved CodeChef 3-Star rating with a peak rating of 1700, including a Rank 7 finish in a rated contest, through consistent competitive programming and algorithmic problem solving.",
 
     icon: "trophy",
 
     year: "2026",
 
     color: "#EC4899",
-
   },
 
   {
