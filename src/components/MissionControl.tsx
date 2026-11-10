@@ -5,9 +5,13 @@ import {
   Zap,
   Rocket,
   Trophy,
+<<<<<<< HEAD
   Award,
   Clock,
   Code2,
+=======
+  Clock,
+>>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
   Bot,
   Terminal,
   Menu,
@@ -23,6 +27,7 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
+<<<<<<< HEAD
   { id: 'origin', label: 'Home', icon: User, color: '#00d4ff', section: 'origin' },
   { id: 'timeline', label: 'Experience', icon: Clock, color: '#10b981', section: 'timeline' },
   { id: 'projects', label: 'Projects', icon: Rocket, color: '#7c3aed', section: 'projects' },
@@ -32,6 +37,15 @@ const navItems: NavItem[] = [
   { id: 'challenges', label: 'Coding', icon: Code2, color: '#a78bfa', section: 'skill-challenges' },
   { id: 'ai', label: 'AI Companion', icon: Bot, color: '#22d3ee', section: 'ai' },
   { id: 'contact', label: 'Contact', icon: Terminal, color: '#FF9900', section: 'contact' },
+=======
+  { id: 'origin', label: 'Origin Story', icon: User, color: '#00d4ff', section: 'origin' },
+  { id: 'skills', label: 'Skills Lab', icon: Zap, color: '#fbbf24', section: 'skills' },
+  { id: 'projects', label: 'Project Universe', icon: Rocket, color: '#7c3aed', section: 'projects' },
+  { id: 'achievements', label: 'Achievement Vault', icon: Trophy, color: '#ec4899', section: 'achievements' },
+  { id: 'timeline', label: 'Experience Timeline', icon: Clock, color: '#10b981', section: 'timeline' },
+  { id: 'ai', label: 'AI Companion', icon: Bot, color: '#22d3ee', section: 'ai' },
+  { id: 'contact', label: 'Contact Terminal', icon: Terminal, color: '#FF9900', section: 'contact' },
+>>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
 ];
 
 export function MissionControl() {

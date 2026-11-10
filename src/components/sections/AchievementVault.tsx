@@ -196,7 +196,11 @@ export function AchievementVault() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
+<<<<<<< HEAD
           <p className="font-space-mono text-cyber-pink text-sm mb-2">CHAPTER 05</p>
+=======
+          <p className="font-space-mono text-cyber-pink text-sm mb-2">CHAPTER 04</p>
+>>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
           <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-white mb-4">
             Achievement Vault
           </h2>

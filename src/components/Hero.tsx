@@ -4,6 +4,7 @@ import { personalInfo } from '../data/content';
 import { useAppStore } from '../store/useAppStore';
 
 export function Hero() {
+<<<<<<< HEAD
   const { setVisitorModalOpen, setAiChatOpen, visitorType } = useAppStore();
 
   const personaCopy = {
@@ -35,6 +36,9 @@ export function Hero() {
   } as const;
 
   const activePersona = visitorType ? personaCopy[visitorType] : null;
+=======
+  const { setVisitorModalOpen, setAiChatOpen } = useAppStore();
+>>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
   const containerRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -124,6 +128,7 @@ export function Hero() {
           className="mb-8"
         >
           <h2 className="font-rajdhani text-2xl md:text-4xl font-light text-white mb-2">
+<<<<<<< HEAD
             {activePersona?.title ?? personalInfo.title}
           </h2>
           <p className="font-space-mono text-lg md:text-xl text-gray-400">
@@ -162,6 +167,15 @@ export function Hero() {
           </motion.div>
         )}
 
+=======
+            {personalInfo.title}
+          </h2>
+          <p className="font-space-mono text-lg md:text-xl text-gray-400">
+            {personalInfo.subtitle}
+          </p>
+        </motion.div>
+
+>>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
         {/* Animated Divider */}
         <motion.div
           className="flex items-center justify-center gap-4 mb-12"
@@ -189,7 +203,11 @@ export function Hero() {
             data-hoverable
           >
             <span className="relative z-10 flex items-center gap-2">
+<<<<<<< HEAD
               {visitorType ? 'Explore My Work' : 'Choose Your Experience'}
+=======
+              Enter Experience
+>>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -227,7 +245,11 @@ export function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.6 }}
         >
+<<<<<<< HEAD
           {['2 Internships', '4+ Projects', '300+ DSA'].map((stat, i) => (
+=======
+          {['4+ Years', '50+ Projects', '500+ Problems'].map((stat, i) => (
+>>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
             <motion.div
               key={stat}
               className="text-center"
