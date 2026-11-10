@@ -1,176 +1,122 @@
 # 🚀 PersonaOS
-### An Interactive Cyberpunk Developer Portfolio with AI & Gamified Coding Challenges
+An Interactive Cyberpunk Developer Portfolio with AI & Gamified Coding Challenges
 
-A futuristic developer portfolio built to showcase technical expertise through immersive storytelling, persona-based experiences, AI-powered interactions, real coding challenges, and modern web technologies.
+A futuristic developer portfolio built to showcase technical expertise through immersive storytelling, AI-powered interactions, real coding challenges, and modern web technologies.
 
----
+       
 
-## 🌐 Live Website
-
+🌐 Live Website  
 https://persona-os.netlify.app/
 
-## 📖 About PersonaOS
+📖 About PersonaOS
 
 PersonaOS is an interactive cyberpunk-inspired developer portfolio designed to go beyond a traditional resume.
 
-Instead of simply showcasing projects and skills, PersonaOS enables visitors to explore a personalized developer experience through interactive storytelling, AI-powered conversations, professional experience, certifications, research publications, and gamified programming challenges.
+Instead of only showcasing projects, PersonaOS enables visitors to explore an immersive developer experience through AI-powered conversations, interactive coding assessments, debugging games, rapid-fire programming challenges, research publications, animated storytelling, and personalized portfolio experiences.
 
-Visitors can choose their preferred persona — Recruiter, Software Engineer, Founder, Student, or Explorer — to explore relevant portfolio content.
+Visitors can choose different personas to explore the portfolio based on their interests, including Recruiter, Software Engineer, Founder, Student, and Explorer.
 
-The goal is to demonstrate practical engineering skills, creativity, technical knowledge, and problem-solving abilities through an engaging digital experience.
+The goal is to demonstrate practical engineering skills, creativity, and problem-solving abilities in an engaging way.
 
-## ✨ Features
+✨ Features
 
-### 🎨 Modern Interactive Portfolio
-- Cyberpunk-inspired UI
-- Glassmorphism design
-- Fully responsive interface
+🎨 Modern Interactive Portfolio
+- Cyberpunk Design
+- Glassmorphism UI
+- Fully Responsive
 - Animated Hero Section
-- Particle Background Effects
+- Particle Background
 - Custom Cursor
 - Smooth Navigation
 - Interactive Animations
-- Framer Motion Transitions
-- Futuristic OS-inspired interface
+- Persona-Based Experience
 
-### 🧑‍🚀 Persona-Based Experience
-Visitors can select different personas to explore relevant portfolio content.
+🧑‍🚀 Persona Selection
+- Recruiter
+- Software Engineer
+- Founder
+- Student
+- Explorer
+- Personalized Portfolio Exploration
 
-- **Recruiter:** Professional experience and achievements
-- **Software Engineer:** Technical skills, projects, and engineering work
-- **Founder:** AI-driven products and innovative solutions
-- **Student:** Certifications and learning journey
-- **Explorer:** Complete portfolio experience
+👩‍💻 Portfolio Sections
+- Hero
+- Origin Story
+- Experience Timeline
+- Skills Lab
+- Project Universe
+- Achievement Vault
+- Certifications
+- AI Companion
+- Skill Challenges
+- Contact Terminal
 
-### 👩‍💻 Portfolio Sections
-
-| Chapter | Section |
-|---|---|
-| 01 | Origin Story |
-| 02 | Experience Timeline |
-| 03 | Project Universe |
-| 04 | Skills Lab |
-| 05 | Achievement Vault |
-| 06 | Certifications |
-| 07 | Skill Challenges |
-| 08 | AI Companion |
-| 09 | Contact Terminal |
-
-### 💼 Experience Timeline
-Showcases professional experience and internship contributions.
-
-**Featured Experience:**
+💼 Experience Timeline
+- Professional Experience Showcase
 - MERN Stack Intern — Unified Mentor Pvt. Ltd.
 - Web Developer Intern — Launched Global
+- Internship Contributions
+- Technical Experience
 
-Highlights include full-stack development, REST APIs, JWT authentication, and responsive web interfaces.
+📜 Certifications
+- Dedicated Certifications Section
+- Internship Certificate Showcase
+- Certificate Previews
+- Responsive Certification Layout
+- Integrated Portfolio Navigation
 
-### 🚀 Project Universe
-An interactive space showcasing development projects and technical implementations.
-
-Featured projects include:
-- PrepPilot AI / Interview Preparation Bot
-- DigiVision AI / MNIST Handwritten Digit Recognition
-- CivicSphere / CivicSense
-- ReNewX AI
-- RecoverAI
-- Page Pulse
-
-### ⚡ Skills Lab
-Interactive visualization of technical capabilities.
-
-**Categories:**
-- Frontend
-- Backend
-- Programming Languages
-- Artificial Intelligence
-- Database
-- DevOps
-- Cloud
-- API
-- 3D
-
-**Features:**
-- Interactive category filters
-- Animated skill progress bars
-- Skill-level indicators
-- Hover animations
-- Technology statistics
-
-### 🏆 Achievement Vault
-Showcases academic, technical, and professional achievements.
-
-Highlights include:
-- GATE 2026 Qualified — Computer Science
-- IEEE Research Publication
-- Academic Achievements
-- Technical Accomplishments
-
-### 📜 Certifications
-Dedicated section for showcasing professional certifications and internship credentials.
-
-**Featured Credentials:**
-- MERN Stack Internship — Unified Mentor Pvt. Ltd.
-- Web Development Internship — Launched Global
-
-Features:
-- Organized certification showcase
-- Certificate previews
-- Dedicated portfolio navigation
-- Responsive certification section
-
-### 🤖 AI Companion
-AI-powered portfolio assistant.
-
-**Features:**
-- Interactive AI conversations
+🤖 AI Companion
+- AI-powered portfolio assistant
 - Recruiter guidance
 - Project explanations
-- Technical skill overview
-- Portfolio-related assistance
+- Skill overview
+- Interactive conversations
 
-### 🎮 Interactive Skill Challenges
+🎮 Interactive Skill Challenges
 
-#### 🧠 Tech Quiz
+🧠 Tech Quiz
 
-**Topics:**
-- React
-- JavaScript
-- TypeScript
-- Java
-- C++
-- Python
-- SQL
-- DBMS
-- Operating Systems
-- Computer Networks
-- AI / ML
+React  
+JavaScript  
+TypeScript  
+Java  
+C++  
+Python  
+SQL  
+DBMS  
+Operating Systems  
+Computer Networks  
+AI / ML  
 
-**Features:**
+Features:
+
 - Easy / Medium / Hard
 - Random Questions
 - XP System
 - Instant Explanations
 - Performance Summary
 
-#### 🐞 Debug The Code
+🐞 Debug The Code
 
-**Languages:**
-- C++
-- Java
-- JavaScript
-- Python
+Languages
 
-**Features:**
+C++  
+Java  
+JavaScript  
+Python  
+
+Features
+
 - Find Bugs
 - Analyze Code
 - Learn Correct Solutions
 - XP Rewards
 - Difficulty Levels
 
-#### ⚡ Code Rush
+⚡ Code Rush
 
-**Gameplay:**
+Gameplay
+
 - 60 Second Timer
 - Random Questions
 - Guess the Output
@@ -180,150 +126,144 @@ AI-powered portfolio assistant.
 - Syntax Check
 - Identify the Error
 
-**Scoring:**
+Scoring
+
 - +10 XP Correct Answer
 - +5 XP Speed Bonus
 - Combo Streak Bonus
 
-**Results:**
+Results
+
 - Total XP
 - Accuracy
 - Best Streak
 - Fastest Answer
 - Performance Rank
 
-## 📚 IEEE Research Publication
+📚 IEEE Research Publication
 
-**Early Fusion-Based Multimodal Analysis for Identifying Mental Health Conditions from Social Media Data**
+Early Fusion-Based Multimodal Analysis for Identifying Mental Health Conditions from Social Media Data
 
-Published in IEEE Conference Proceedings.
+Published in IEEE Conference Proceedings
 
 https://ieeexplore.ieee.org/document/11465665
 
-## 🛠 Tech Stack
+🛠 Tech Stack
 
-**Frontend**
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
+Frontend  
+React  
+TypeScript  
+Vite  
+Tailwind CSS  
 
-**State Management**
-- Zustand
+State Management  
+Zustand  
 
-**Animations**
-- Framer Motion
+Animations  
+Framer Motion  
 
-**Icons**
-- Lucide React
+Icons  
+Lucide React  
 
-**Deployment**
-- Netlify
+Deployment  
+Netlify  
 
-**Version Control**
-- Git & GitHub
+📂 Project Structure
 
-## 📂 Project Structure
+PersonaOS  
+│  
+├── public  
+├── src  
+│   ├── assets  
+│   ├── components  
+│   │   ├── sections  
+│   │   │   ├── OriginStory.tsx  
+│   │   │   ├── ExperienceTimeline.tsx  
+│   │   │   ├── SkillsLab.tsx  
+│   │   │   ├── ProjectUniverse.tsx  
+│   │   │   ├── AchievementVault.tsx  
+│   │   │   ├── Certifications.tsx  
+│   │   │   ├── AICompanion.tsx  
+│   │   │   ├── SkillChallenges.tsx  
+│   │   │   └── ContactTerminal.tsx  
+│   │   ├── MissionControl.tsx  
+│   │   └── VisitorModal.tsx  
+│   ├── quiz  
+│   ├── store  
+│   ├── hooks  
+│   ├── utils  
+│   ├── App.tsx  
+│   └── main.tsx  
+│  
+├── package.json  
+└── vite.config.ts  
 
-```text
-PersonaOS/
-│
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── sections/
-│   │   ├── MissionControl.tsx
-│   │   └── VisitorModal.tsx
-│   ├── quiz/
-│   ├── store/
-│   ├── hooks/
-│   ├── utils/
-│   ├── App.tsx
-│   └── main.tsx
-│
-├── package.json
-└── vite.config.ts
-```
+🚀 Getting Started
 
-## 🚀 Getting Started
+Clone Repository
 
-### Clone Repository
-
-```bash
 git clone https://github.com/bhavya27092027/PersonaOS.git
-```
 
-### Navigate
+Navigate
 
-```bash
 cd PersonaOS
-```
 
-### Install Dependencies
+Install Dependencies
 
-```bash
 npm install
-```
 
-### Run Development Server
+Run
 
-```bash
 npm run dev
-```
 
-### Build
+Build
 
-```bash
 npm run build
-```
 
-### Preview
+Preview
 
-```bash
 npm run preview
-```
 
-## 🏆 Highlights
+🏆 Highlights
 
-- 🚀 Interactive Developer Portfolio
-- 🧑‍🚀 Persona-Based Portfolio Experience
-- 💼 Professional Experience Timeline
-- 📂 Interactive Project Universe
-- ⚡ Dynamic Skills Lab
-- 🏆 Achievement Vault
-- 📜 Dedicated Certifications Section
-- 🤖 AI Companion
-- 🎮 Gamified Coding Challenges
-- 🐞 Interactive Debugging Challenges
-- 🧠 Technical Quiz Platform
-- ⚡ Code Rush Programming Game
-- 📚 IEEE Research Publication
-- 🎨 Cyberpunk UI
-- 📱 Responsive Design
-- ⚛️ React + TypeScript Architecture
-- 🌐 Netlify Deployment
+🚀 Interactive Developer Portfolio  
+🧑‍🚀 Persona-Based Portfolio Experience  
+💼 Experience Timeline  
+📂 Interactive Project Universe  
+⚡ Skills Lab  
+🏆 Achievement Vault  
+📜 Certifications Showcase  
+🤖 AI Companion  
+🎮 Gamified Coding Challenges  
+🐞 Debugging Challenges  
+🧠 Technical Quiz Platform  
+⚡ Code Rush Programming Game  
+📚 IEEE Research Publication  
+🎨 Cyberpunk UI  
+📱 Responsive Design  
+⚛️ React + TypeScript Architecture  
+🌐 Production Ready  
 
-## 📈 Future Scope
+📈 Future Scope
 
-- Recruiter Dashboard
-- AI Interview Simulator
-- Global Leaderboard
-- Achievement Badges
-- Multiplayer Coding Challenges
-- Daily Coding Challenges
+Recruiter Dashboard  
+AI Interview Simulator  
+Global Leaderboard  
+Achievement Badges  
+Multiplayer Coding Challenges  
+Daily Coding Challenges  
 
-## 👨‍💻 Author
+👨‍💻 Author
 
-**Bhavya Jain**
+Bhavya Jain
 
 B.Tech Computer Science & Engineering (Artificial Intelligence & Machine Learning)
 
-### Connect
+Connect
 
 💼 LinkedIn
 
-https://www.linkedin.com/in/bhavya27092027
+https://www.linkedin.com/in/bhavyajain-fullstack
 
 💻 GitHub
 
@@ -333,16 +273,10 @@ https://github.com/bhavya27092027
 
 bhavya011048@gmail.com
 
-🌐 Portfolio
-
-https://persona-os.netlify.app/
-
-## 📄 License
+📄 License
 
 Licensed under the MIT License.
 
----
-
 ⭐ If you like this project, consider giving it a Star!
 
-**Made with ❤️ by Bhavya Jain**
+Made with ❤️ by Bhavya Jain
