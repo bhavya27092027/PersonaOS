@@ -26,20 +26,12 @@ export function ExperienceTimeline() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-<<<<<<< HEAD
           <p className="font-space-mono text-cyber-green text-sm mb-2">CHAPTER 02</p>
-=======
-          <p className="font-space-mono text-cyber-green text-sm mb-2">CHAPTER 06</p>
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
           <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-white mb-4">
             Experience Timeline
           </h2>
           <p className="font-rajdhani text-gray-400 text-lg max-w-2xl mx-auto">
-<<<<<<< HEAD
             Hands-on software development experience across full-stack engineering, web development, and applied AI research.
-=======
-            The journey from beginner to engineer - a visual roadmap of growth and learning.
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
           </p>
         </motion.div>
       </div>
@@ -149,11 +141,7 @@ export function ExperienceTimeline() {
       >
         <div className="glass-panel rounded-2xl p-8">
           <h3 className="font-orbitron text-xl font-bold text-white mb-6 text-center">
-<<<<<<< HEAD
             Engineering Journey
-=======
-            Career Progression
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
           </h3>
 
           <div className="flex justify-between items-center relative">

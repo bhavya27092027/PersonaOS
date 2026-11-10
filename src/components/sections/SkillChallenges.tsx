@@ -1,8 +1,5 @@
 import { motion } from 'framer-motion';
-<<<<<<< HEAD
 import { useMemo, useState } from 'react';
-=======
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
 import { Play, Zap, Bug, Brain, Star, LucideIcon } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 
@@ -63,7 +60,6 @@ const games: Game[] = [
 
 
 export function SkillChallenges() {
-<<<<<<< HEAD
   const { setCurrentGame, visitorType } = useAppStore();
   const [showAllChallenges, setShowAllChallenges] = useState(false);
 
@@ -115,12 +111,6 @@ export function SkillChallenges() {
 
   return (
     <section id="skill-challenges" className="relative py-32 px-4 overflow-hidden">
-=======
-  const { setCurrentGame } = useAppStore();
-
-  return (
-    <section className="relative py-32 px-4 overflow-hidden">
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 cyber-grid opacity-20" />
@@ -142,16 +132,11 @@ export function SkillChallenges() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-<<<<<<< HEAD
           <p className="font-space-mono text-cyber-green text-sm mb-2">CHAPTER 07 · BONUS</p>
-=======
-          <p className="font-space-mono text-cyber-green text-sm mb-2">BONUS CHAPTER</p>
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
           <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-white mb-4">
             Skill Challenges
           </h2>
           <p className="font-rajdhani text-gray-400 text-lg max-w-2xl mx-auto">
-<<<<<<< HEAD
             {activePersona?.description ?? 'Test your abilities with interactive games. Sharpen your problem-solving skills through developer challenges.'}
           </p>
           {activePersona && (
@@ -185,17 +170,6 @@ export function SkillChallenges() {
       <div className="relative z-10 max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {visibleGames.map((game, index) => (
-=======
-            Test your abilities with interactive games. Sharpen your problem-solving skills through interactive developer challenges.
-          </p>
-        </motion.div>
-      </div>
-
-      {/* Games Grid */}
-      <div className="relative z-10 max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {games.map((game, index) => (
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
             <motion.div
               key={game.id}
               initial={{ opacity: 0, y: 50 }}

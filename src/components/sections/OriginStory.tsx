@@ -70,16 +70,9 @@ export function OriginStory() {
         {/* Timeline Events */}
         {timeline.map((event, index) => (
           <motion.div
-<<<<<<< HEAD
             key={`${event.year}-${index}`}
             className={`relative flex items-center mb-16 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
               }`}
-=======
-            key={event.year}
-            className={`relative flex items-center mb-16 ${
-              index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-            }`}
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
             initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
@@ -93,14 +86,8 @@ export function OriginStory() {
                 data-hoverable
               >
                 <div
-<<<<<<< HEAD
                   className={`flex items-center gap-3 mb-2 ${index % 2 === 0 ? 'justify-end' : 'justify-start'
                     }`}
-=======
-                  className={`flex items-center gap-3 mb-2 ${
-                    index % 2 === 0 ? 'justify-end' : 'justify-start'
-                  }`}
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
                 >
                   <motion.div
                     className="w-10 h-1 bg-gradient-to-r from-cyber-blue to-cyber-cyan rounded"

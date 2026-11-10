@@ -13,10 +13,7 @@ import { OriginStory } from './components/sections/OriginStory';
 import { SkillsLab } from './components/sections/SkillsLab';
 import { ProjectUniverse } from './components/sections/ProjectUniverse';
 import { AchievementVault } from './components/sections/AchievementVault';
-<<<<<<< HEAD
 import { Certifications } from './components/sections/Certifications';
-=======
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
 import { AICompanion } from './components/sections/AICompanion';
 import { SkillChallenges } from './components/sections/SkillChallenges';
 import { ExperienceTimeline } from './components/sections/ExperienceTimeline';
@@ -62,7 +59,6 @@ function App() {
           {/* Hero Section */}
           <Hero />
 
-<<<<<<< HEAD
           {/* Sections: recruiter-friendly order */}
           <OriginStory />
           <ExperienceTimeline />
@@ -72,15 +68,6 @@ function App() {
           <Certifications />
           {!currentGame && <SkillChallenges />}
           <AICompanion />
-=======
-          {/* Sections */}
-          <OriginStory />
-          <SkillsLab />
-          <ProjectUniverse />
-          <AchievementVault />
-          <AICompanion />
-          {!currentGame && <SkillChallenges />}
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
 
           {currentGame === "tech-quiz" && (
             <TechQuizPage onExit={() => setCurrentGame(null)} />
@@ -93,10 +80,6 @@ function App() {
           {currentGame === "code-rush" && (
             <CodeRushPage onExit={() => setCurrentGame(null)} />
           )}
-<<<<<<< HEAD
-=======
-          <ExperienceTimeline />
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
           <ContactTerminal />
 
           {/* Footer */}

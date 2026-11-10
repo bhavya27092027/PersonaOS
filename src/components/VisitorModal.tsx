@@ -44,7 +44,6 @@ export function VisitorModal() {
   const { visitorModalOpen, setVisitorModalOpen, setVisitorType, visitorType } = useAppStore();
 
   const handleSelect = (type: VisitorType) => {
-<<<<<<< HEAD
     if (!type) return;
     setVisitorType(type);
     setTimeout(() => {
@@ -65,12 +64,6 @@ export function VisitorModal() {
           ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 250);
     }, 350);
-=======
-    setVisitorType(type);
-    setTimeout(() => {
-      setVisitorModalOpen(false);
-    }, 500);
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
   };
 
   return (
