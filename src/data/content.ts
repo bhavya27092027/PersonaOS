@@ -17,11 +17,7 @@ export const personalInfo = {
 
   github: "https://github.com/bhavya27092027",
 
-<<<<<<< HEAD
   resume: "/Bhavya_Jain_Software_Engineer_Resume.pdf",
-=======
-  resume: "/Bhavya_Jain_SDE_Resume.pdf",
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
 
   location: "Ghaziabad, India",
 
@@ -37,7 +33,6 @@ I aspire to become a Software Engineer building intelligent systems that combine
 };
 
 
-<<<<<<< HEAD
 
 export const certifications = [
   {
@@ -140,8 +135,6 @@ export const certifications = [
   },
 ];
 
-=======
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
 export const skills = [
 
   // Languages
@@ -653,7 +646,6 @@ export const achievements = [
 
 
 export const experience = [
-<<<<<<< HEAD
   {
 
     id: "intern1",
@@ -714,9 +706,6 @@ export const experience = [
     ]
 
   },
-=======
-
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
   {
 
     id: "education",
@@ -751,72 +740,6 @@ export const experience = [
     ]
 
   },
-<<<<<<< HEAD
-=======
-
-  {
-
-    id: "intern1",
-
-    title: "Full Stack Developer Intern",
-
-    company: "Unified Mentors Pvt. Ltd.",
-
-    duration: "Dec 2025 - Mar 2026",
-
-    description:
-      `Developed scalable MERN Stack applications by building reusable React components, REST APIs, JWT authentication modules, MongoDB integrations, and responsive user interfaces while collaborating within Agile development workflows.`,
-
-    technologies: [
-
-      "React",
-
-      "Node.js",
-
-      "Express.js",
-
-      "MongoDB",
-
-      "JWT",
-
-      "REST APIs",
-
-      "Git"
-
-    ]
-
-  },
-
-  {
-
-    id: "intern2",
-
-    title: "Web Developer Intern",
-
-    company: "Launched Global",
-
-    duration: "May 2025 - Jun 2025",
-
-    description:
-      `Designed responsive frontend interfaces, optimized website performance, enhanced UI responsiveness, and collaborated with developers to improve user experience across multiple web applications.`,
-
-    technologies: [
-
-      "HTML",
-
-      "CSS",
-
-      "JavaScript",
-
-      "React",
-
-      "Bootstrap"
-
-    ]
-
-  },
-
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
   {
 
     id: "research",
@@ -844,17 +767,9 @@ export const experience = [
 
     ]
 
-<<<<<<< HEAD
   }
 ];
 
-=======
-  },
-
-];
-
-
->>>>>>> 10442e488e90465a2ab118c8b6961984eebe960f
 export const timeline = [
 
   {
