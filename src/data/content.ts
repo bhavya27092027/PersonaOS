@@ -133,6 +133,21 @@ export const certifications = [
     fileType: 'image',
     description: 'Certificate of participation in GUVI Day – Mission UpSkill India Techfest, powered by HCL GUVI at ABES Engineering College.',
   },
+
+  {
+    id: "nptel-cloud-computing",
+    name: "Cloud Computing",
+    issuer: "NPTEL · Indian Institute of Technology Kharagpur",
+    issued: "October 2026",
+    type: "Elite Certificate",
+    credentialId: "NPTEL26CS150S555200077",
+    preview: "/certificates/NPTEL_Cloud_Computing_Elite_2026.png",
+    file: "/certificates/NPTEL_Cloud_Computing_IIT_Kharagpur_Elite_2026.pdf",
+    fileType: "pdf",
+    description: "Successfully completed the 12-week NPTEL Cloud Computing course with an Elite certificate and a consolidated score of 84%. Online Assignments: 24.69/25. Proctored Exam: 58.5/75.",
+    skills: ["Cloud Computing"],
+  },
+
 ];
 
 export const skills = [
